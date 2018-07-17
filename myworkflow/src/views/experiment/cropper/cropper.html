@@ -1,0 +1,69 @@
+<div class="corpper">
+	<form class="upload-img-wrap col-md-3">
+		<label for="upload-img" class="upload-ctrl-mask" ng-click="vm.uploadImg($event)">上传图片</label>
+		<input id="upload-img" type="file" class="upload-ctrl" ng-model="fileObj">
+		<section class="detail-wrap">
+			<p><span>x：</span>{{vm.detail.x}}</p>
+			<p><span>y：</span>{{vm.detail.y}}</p>
+			<p><span>width：</span>{{vm.detail.width}}</p>
+			<p><span>height：</span>{{vm.detail.height}}</p>
+			<p><span>rotate：</span>{{vm.detail.rotate}}</p>
+			<p><span> scaleX：</span>{{vm.detail.scaleX}}</p>
+			<div class="btn-group-wrap">
+				<button class="btn btn-success" ng-click="vm.getCroppedImg(vm.detail)">
+					 getCroppedImg
+				</button>
+			</div>
+		</section>
+	</form>
+	<div class="col-md-9">
+		<div class="show-img">
+			<img class="crop-img" ng-src="{{vm.imgUrl}}" alt="upload-img">
+		</div>
+		<div class="img-btn-list">
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.zoom( 0.1)">
+				<span class="glyphicon glyphicon-zoom-in"></span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.zoom(-0.1)">
+				<span class="glyphicon glyphicon-zoom-out"></span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.crop()">
+				<span class="glyphicon glyphicon-ok"></span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.clear()">
+				<span class="glyphicon glyphicon-remove"></span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.rotate(-45)">
+				<span style="font-size: 14px;">左旋</span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.rotate(45)">
+				<span style="font-size: 14px;">右旋</span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.scaleX(-1)">
+				<span class="glyphicon glyphicon-resize-horizontal"></span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.scaleY(-1)">
+				<span class="glyphicon glyphicon-resize-vertical"></span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.reset()">
+				<span class="glyphicon glyphicon-refresh"></span>
+			</button>
+			<button class="btn btn-sm btn-info" ng-click="vm.$cropper.destroy()">
+				<span class="glyphicon glyphicon-off"></span>
+			</button>
+		</div>
+	</div>
+
+	<!-- modal -->
+	<div class="modal fade crop-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content crop-modal-content">
+				<img ng-src="{{vm.croppedImg}}" alt="">
+				<p class="text-center crop-modal-btn-wrap">
+					<button class="btn btn-default crop-modal-btn" data-dismiss="modal">close</button>
+					<a class="btn btn-success crop-modal-btn" ng-click="vm.downloadImg($event, vm.croppedImg)">download</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

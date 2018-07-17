@@ -1,0 +1,9 @@
+<div>
+	<h4>图片底部白边问题</h3>
+	<p>留白的高度 = (lineheight - fontsize)/2 ，即一个 `半行距` (halfheading)</p>
+	<p>也很好解决：`line-height: 0`  `vertical-align: middle` `display: block` 等等</p>
+	<p>留白产生原理是浏览器渲染图片时，底端默认基于 `baseline` 对齐</p>
+	<div class="test-img-wrap">
+		<img src="../../../imgs/bike.jpg" alt="">
+	</div>
+</div>

@@ -1,0 +1,171 @@
+#container{
+	padding: 80px 0 0 0;
+}
+.navbar-nav > li > span.logo{
+	display: inline-block;
+	width: 40px;
+	line-height: 50px;
+	vertical-align: middle;
+	font-size: 23px;
+	color: #fff;
+}
+.content section{
+	margin: 0 0 20px;
+	padding: 30px;
+	border: 1px solid #ececec;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 0 #ececec;
+}
+.content section>h3{
+	margin: 10px 0 20px;
+}
+.content section>p{
+	margin: 10px 0;
+}
+.btn.btn-look{
+	transition: 200ms;
+	background-color: #444;
+	color: #fff;
+}
+.btn.btn-look:focus{
+	outline: none;
+}
+.btn.btn-look:hover{
+	background-color: #fff;
+	color: #444;
+	border: 1px solid #ececec;
+}
+
+.upload-img-wrap{
+	position: relative;
+	padding: 20px 0;
+	height: 75px;
+}
+
+.upload-ctrl{
+	position: absolute;
+	width: 100px;
+	height: 35px;
+}
+.upload-ctrl-mask{
+	position: absolute;
+	z-index: 3;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	background-color: #444;
+	border: 1px solid #ececec;
+	cursor: pointer;
+	transition: .2s;
+}
+.upload-ctrl-mask:hover{
+	background-color: #fff;
+	color: #444;
+}
+.show-img{
+	width: 100%;
+	height: 400px;
+	background-color: #fbfbfb;
+}
+.crop-img{
+	max-width: 100%;
+}
+.img-btn-list{
+	padding: 15px;
+}
+.img-btn-list button{
+	margin: 0 3px;
+}
+/* 图片对应按钮的字体图标大小 */
+.img-btn-list button>span{
+	font-size: 18px;
+	color: #fff;
+}
+/* crop属性展示区域 */
+.detail-wrap{
+	padding: 45px 0;
+}
+.detail-wrap p{ 
+	margin: 15px 0;
+}
+.btn-group-wrap{
+	padding: 20px 0;
+}
+/* 截取的图片展示modal */
+.crop-modal-content{
+	padding: 35px;
+	text-align: center;
+}
+.crop-modal-btn{
+	margin: 0 10px 0;
+}
+.crop-modal-btn-wrap{
+	padding: 20px 0 10px;
+}
+/* 图片底部留白 */
+.test-img-wrap{
+	border: 1px solid #ececec;
+}
+.test-img-wrap img{
+	vertical-align: initial;
+}
+/*city-test*/
+.index-list-title {
+  height: 2.5rem;
+  font-size: 0.7rem;
+}
+.index-list {
+  position: relative;
+  height: 2.5rem;
+  font-size: 0.7rem;
+  color: #333;
+}
+#scroll-wrap {
+  overflow: hidden;
+}
+.index-list-anchor {
+  height: 2rem;
+  line-height: 2rem;
+  background: #f7f7f7;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+.index-list-item {
+  background: #fff;
+  color: #666;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.index-list-fixed {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  line-height: 2rem;
+  height: 2rem;
+  color: #999;
+  background: #f7f7f7;
+}
+.active {
+  color: #3b99fc;
+}
+.city-nav {
+  position: absolute;
+  z-index: 30;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+.display-flex{
+  display: flex;
+}
+.flex{
+  flex: 1;
+}

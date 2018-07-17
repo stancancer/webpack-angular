@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="userapp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>selfproject</title>
+</head>
+<body>
+	<!-- header -->
+<div class="navbar navbar-inverse navbar-fixed-top" role='navigation'>
+	<div class="container">
+		<div class="navbar-collapse clearfix">
+			<ul class="nav navbar-nav">
+				<li>
+					<!-- <a class="icon" href=""></a> -->
+					<span class="glyphicon glyphicon-th-large logo"></span>
+				</li>
+				<li class="active">
+					<a ui-sref="home">首页</a>
+				</li>
+				<li>
+					<a ui-sref="vuestudy">vue学习</a>
+				</li>
+				<li>
+					<a ui-sref="canvas">canvas</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div id="container" class="container">
+		<!-- <div class="jumbotron">
+			<h3>This is a place for my testing</h1>
+		</div> -->
+		<div ui-view></div>
+	</div>
+</body>
+</html>

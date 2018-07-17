@@ -1,0 +1,30 @@
+<div class="index-list" v-init="BSInit()">
+    <div class="search-inp-out" style="z-index:2;">
+        <form action="javascript:void(0);">
+            <input type="search" class="search-inp" v-model="SearchCityTxt" v-keyup="SearchCity($event)" placeholder="{{Messages.CityName | phFilter:1}}"
+            />
+        </form>
+    </div>
+    <div id="scroll-wrap" class="bg-white">
+        <div class="list-content">
+            <ul>
+                <li class="listGroup" v-repeat="group in cityList">
+                    <div class="w index-list-anchor">{{group.name}}</div>
+                    <ul>
+                        <li class="w index-list-item border-bottom-1px" v-repeat="item in group.cities" repeat-finsh="loadBScroll()" v-class="{'bd-line': $index!=0}">
+                            {{item.name}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="city-nav">
+        <ul>
+            <li class="w" data-index="{{$index}}" v-repeat="item in shortcutList" v-class="{'active': currentIndex === $index}">{{item.name}}</li>
+        </ul>
+    </div>
+    <div class="w index-list-fixed" v-show="fixedTitle()">
+        {{fixedTitle()}}
+    </div>
+</div>

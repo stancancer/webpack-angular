@@ -1,0 +1,51 @@
+/*reset*/
+/* h1, h2, h3, p, ul, body{
+    margin: 0; padding: 0;
+} */
+ul{list-style: none;}
+a{text-decoration: none;}
+input, select, textarea, button{border: none; outline: none;}
+
+/*公共样式*/
+body{background-color: #fff; font-size: 14px; font-family: '微软雅黑';}
+.w{width: 1099px; margin: 0 auto;}
+.clearfix:after{content:''; display: block; clear: both;}
+.tac{text-align: center;}
+.tal{text-align: left;}
+.tar{text-align: right;}
+.fc-3{color: #333;}
+.fc-6{color: #666;}
+.fc-9{color: #999;}
+.fs-12{font-size: 12px;}
+.fs-14{font-size: 14px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-20{font-size: 20px;}
+.bgc-w{background-color: #fff;}
+.bdc-b{border-bottom: 1px solid #e6e6e6;}
+.bdc-t{border-bottom: 1px solid #e6e6e6;}
+.bdc-b2{border-bottom: 1px dotted #e6e6e6;}
+.bdc-r{border-right: 1px solid #e6e6e6;}
+/* .btn{width: 240px; height: 40px; color: #d1a347; background: url(images/btn-bg.png) no-repeat;} */
+.floatleft{float: left;}
+.floatright{float: right;}
+.mt20{margin-top: 20px;}
+.mb20{margin-bottom: 20px;}
+.mb10{margin-bottom: 10px;}
+
+
+/* 按钮样式 */
+.user-btn-pri{
+    width: 150px;
+    height: 35px;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.user-btn-blue{
+    width: 150px;
+    height: 35px;
+    color: #8DC6EE;
+    background-color: #fff;
+    border: 1px solid #8DC6EE;
+}
